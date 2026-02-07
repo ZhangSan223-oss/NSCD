@@ -127,10 +127,7 @@ def load_rules(rules_path):
     f"{len(sim_pairs)} 条相似关系, "
     f"{len(compositional_rules)} 条组合规则"
     )
-    if comp_rules_count > 0:
-        print(f"注意: 忽略了 {comp_rules_count} 条组合规则")
-    
-    
+
     if prereq_rules:
         print("先修规则:")
         for pre, post in prereq_rules:
